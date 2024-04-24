@@ -27,3 +27,8 @@ const Xprinter = XprinterModule
 export function multiply(a: number, b: number): Promise<number> {
   return Xprinter.multiply(a, b);
 }
+
+
+export function connect(ipAddress: string): Promise<boolean> {
+  return Xprinter.connect(ipAddress);
+}

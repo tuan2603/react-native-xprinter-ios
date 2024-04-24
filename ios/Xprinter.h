@@ -4,9 +4,11 @@
 
 @interface Xprinter : NSObject <NativeXprinterSpec>
 #else
-#import <React/RCTBridgeModule.h>
 
-@interface Xprinter : NSObject <RCTBridgeModule>
+#import <React/RCTBridgeModule.h>
+#import "POSWIFIManager.h"
+
+@interface Xprinter : NSObject <RCTBridgeModule, POSWIFIManagerDelegate>
 #endif
 
 @end
