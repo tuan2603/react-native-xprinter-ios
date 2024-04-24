@@ -55,6 +55,7 @@ android {
 
     sourceSets {
       main {
+        jniLibs.srcDirs = ['libs']
         manifest.srcFile "src/main/AndroidManifestNew.xml"
       }
     }
@@ -110,6 +111,7 @@ dependencies {
   //noinspection GradleDynamicVersion
   implementation "com.facebook.react:react-native:+"
   implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+  implementation files('src/libs/printer-lib-3.1.6.aar')
 }
 
 if (isNewArchitectureEnabled()) {

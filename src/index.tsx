@@ -29,6 +29,31 @@ export function multiply(a: number, b: number): Promise<number> {
 }
 
 
-export function connect(ipAddress: string): Promise<boolean> {
-  return Xprinter.connect(ipAddress);
+export function discovery(connType: number): Promise<string> {
+  return Xprinter.discovery(connType);
 }
+
+export function connect(connType: number, address: string): Promise<boolean> {
+  return Xprinter.connect(connType, address);
+}
+
+export function printBitmap(base64: string) {
+  return Xprinter.printBitmap(base64);
+}
+
+export function openCashBox() {
+  return Xprinter.openCashBox();
+}
+
+export function printerStatus(): Promise<number> {
+  return Xprinter.printerStatus();
+}
+
+export function isConnect(): Promise<boolean> {
+  return Xprinter.isConnect();
+}
+
+export function setIp(ipAddress: String): Promise<boolean> {
+  return Xprinter.setIp(ipAddress);
+}
+
