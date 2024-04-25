@@ -79,3 +79,5 @@ lib/
 example/ios/.xcode.env.local
 example/ios/Podfile.lock
 yarn.lock
+PrinterSDK/
+**/PrinterSDK/
