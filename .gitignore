@@ -79,4 +79,4 @@ lib/
 example/ios/.xcode.env.local
 example/ios/Podfile.lock
 yarn.lock
-example/PrinterSDK/
+example/ios/PrinterSDK/
